@@ -4,7 +4,7 @@ body{background:none repeat scroll 0 0 #FAFAFA; border-top:1px solid #0F6D9A; co
 a, a:visited{color:#585858; font-weight:normal; text-decoration:none}
 ol li{list-style:decimal inside none; padding:10px 0 10px 20px}
 a:hover{color:#59C8EF}
-h1 {font-size: 40px; text-align:left; padding:28px; font-family: 'Trykker', serif; font-weight:bold}
+h1 {font-size: 40px; text-align:left; padding:28px; font-family: 'Habibi', serif; font-weight:bold}
 
 #container{margin:0 auto; width:900px; overflow:hidden; padding:0 0 28px; position:relative; text-align:left; box-shadow: 0px 0px 0px}
 ul li{list-style:none; padding:10px 0; float:left; clear:both; background:#FAFAFA; border-bottom:1px solid #7F6B5F}
@@ -18,4 +18,4 @@ a.username:hover, a.username:active{color:#4FD1FF; text-decoration:underline}
 .tweet_text{float:left;}
 .tweet_created_at{clear:left; color:#9E9E9E;  float:left;  font-size:12px}
 
-#sidebar { float: right; width: 280px; padding: 20px 20px 5px 20px; margin: 5px 0 0 0; background: #f5f5f5; font-size: 12px; border: 1px #e5e5e5 solid; text-align:left }
+#sidebar { float: right; width: 280px; padding: 20px 20px 20px 15px; margin: 0px 0 0 0; background: white; font-size: 12px; border: 3px #E0E6F8 solid; text-align:left }
