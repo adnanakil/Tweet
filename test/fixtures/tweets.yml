@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  from_user: MyString
+  from_user_id_str: MyString
+  profile_image_url: MyString
+  text: MyString
+  twitter_created_at: 2011-09-14 17:47:02
+
+two:
+  from_user: MyString
+  from_user_id_str: MyString
+  profile_image_url: MyString
+  text: MyString
+  twitter_created_at: 2011-09-14 17:47:02

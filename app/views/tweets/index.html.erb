@@ -1,0 +1,60 @@
+<h1>Shabiha Tweets</h1>
+
+<div id="sidebar">
+	<p>Post tweets with the address of anyone you know that is involved in violence against peaceful Syrian protesters with the tag "#shabiha" and they will be collected here</p>
+	</div>
+
+<div id="container">
+<ul>
+<% @tweets.each do |tweet| %>
+	<li class="<%=cycle('odd', '')%>">
+		
+		<span class="tweet_user_area">
+
+
+			<div class="tweet_user_pic"> <img src= <%= tweet.profile_image_url %>> </div>
+		</span>
+		<div class="tweet_text_area">
+			<div class="tweet_text">
+				<%=raw display_content_with_links(tweet.text) %>
+			</div>
+			<div class="tweet_created_at">
+				<%= time_ago_in_words tweet.twitter_created_at %> ago
+			</div>
+		</div>
+	</li>
+	
+<% end %>
+</ul>
+</div>
+
+
+
+
+<!-- 
+
+<div id="container">
+<ul>
+<% @tweets.each do |tweet| %>
+	<li class="<%=cycle('odd', '')%>">
+	<div class="tweet_container">
+		<div class="tweet_user_area">
+			<div class="tweet_user_name"<%= link_to tweet.from_user, "http://twitter.com/#{tweet.from_user}", :class => "username", :target => "_blank" %> </div>
+			<div class="tweet_user_pic"> <img src= <%= tweet.profile_image_url %>> </div>
+		</div>
+		<div class="tweet_text_area">
+			<div class="tweet_text">
+				<%=raw display_content_with_links(tweet.text) %>
+			</div>
+			<div class="tweet_created_at">
+				<%= time_ago_in_words tweet.twitter_created_at %> ago
+			</div>
+		</div>
+	</div>
+	</li>
+	
+<% end %>
+</ul>
+</div>
+
+-->
