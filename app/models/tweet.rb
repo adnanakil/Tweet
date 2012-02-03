@@ -8,7 +8,7 @@ class Tweet < ActiveRecord::Base
     search = Twitter::Search.new
 
     #grab recent 100 tweets which contain 'new year resolution' words, and loop each of them
-    search.containing("#shabiha").result_type("recent").per_page(100).fetch.each do |tweet_results|
+    search.containing("#preparethem").result_type("recent").per_page(100).fetch.each do |tweet_results|
 
       #parsing the string 'created_at' to DateTime object
       twitter_created_at = DateTime.parse(tweet_results.created_at)
